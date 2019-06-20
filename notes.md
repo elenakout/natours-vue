@@ -74,4 +74,8 @@ Utility classes are very simple classes which only hane one goal
 .u-center-text {
   text-align: center;
 }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
 ```
