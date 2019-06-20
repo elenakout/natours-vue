@@ -35,3 +35,31 @@ so we make the text `transparent` so we can see the background
 ```css
 color: transparent;
 ```
+
+---
+
+## Moving Text on Hover
+
+We use the `transform` property
+
+We can put multiple things we want to transform
+
+> `skewY(degrees)`
+>
+> `skewX(degrees)`
+>
+> `scale(percent)`
+
+```scss
+&:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+}
+```
+
+We put the `transform` property to the element we want
+
+```css
+.heading {
+  transition: all 0.2s;
+}
+```
