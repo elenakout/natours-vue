@@ -1,8 +1,10 @@
 <template>
   <section class="section-about">
-    <h2 class="heading-secondary">
-      Exciting tours for adventurous people
-    </h2>
+    <div class="u-center-text">
+      <h2 class="heading-secondary">
+        Exciting tours for adventurous people
+      </h2>
+    </div>
   </section>
 </template>
 

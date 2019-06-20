@@ -63,3 +63,15 @@ We put the `transform` property to the element we want
   transition: all 0.2s;
 }
 ```
+
+---
+
+## Utility Classes
+
+Utility classes are very simple classes which only hane one goal
+
+```css
+.u-center-text {
+  text-align: center;
+}
+```
