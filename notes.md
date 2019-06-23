@@ -96,3 +96,21 @@ Utility classes are very simple classes which only hane one goal
 ```css
 <i class="fas fa-globe"></i>
 ```
+
+---
+
+## Skew A section
+
+This will `skew` the hole section
+
+```css
+transform: skewY(-7deg);
+```
+
+To `unskew` the content of the section we use `direct-child` selector (`>`)
+
+```scss
+& > * {
+  transform: skewY(7deg);
+}
+```
