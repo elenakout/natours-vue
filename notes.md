@@ -121,120 +121,56 @@ To `unskew` the content of the section we use `direct-child` selector (`>`)
 
 ## Implement a full rotate on a card element
 
+The `card` element
+
 ```scss
 .card {
-  background-color: orangered;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
   height: 50rem;
-  transition: all 0.5sec ease;
 }
 ```
 
-When we `hover` we rotate `180deg` across the `Y` axis
+We make two sides of the card
 
-```scss
-&:hover {
-  transform: rotateY(180deg);
-}
+```html
+<div class="card__side card__side--front">FRONT</div>
+<div class="card__side card__side--back">BACK</div>
 ```
-
-To make it to pop out we use `prespective`.
-
-We define `prespective` to the parent element and then we use the `direct-child` selector
-
-For `firefox` we use `-moz-perspective`
-
-```scss
-perspective: 150rem;
--moz-perspective: 150rem;
-```
-
-We make a `div` for the card side
-
-> `<div class="card__side"></div>`
 
 ```scss
 &__side {
-  background-color: orangered;
-  height: 50rem;
-  color: #fff;
-  font-size: 2rem;
-  transition: all 0.5sec;
-}
+    background-color: orangered;
+    color: #fff;
+    font-size: 2rem;
+
+    height: 50rem;
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    &--front {
+      background-color: orangered;
+    }
+
+    &--back {
+      background-color: green;
+      transform: rotateY(180deg);
+    }
 ```
 
-```scss
-&:hover &__side {
-  transform: rotateY(180deg);
-}
-```
-
-We use a `modifier class` for each side
-
-```html
-<div class="card__side--front">
-  Front Side
-</div>
-
-<div class="card__side--back">
-  Back Side
-</div>
-```
-
-```scss
-&--frond {
-  background-color: orangered;
-}
-
-&--back {
-  background-color: green;
-  transform: rotateY(180deg);
-}
-```
-
-And the `scss`
+Rotate the sides
 
 ```scss
 &:hover &__side--front {
   transform: rotateY(180deg);
 }
+
 &:hover &__side--back {
   transform: rotateY(0);
-}
-```
-
-To have the divs on top of eachother we use the `absolute` position on the `card__side` class
-
-```scss
-&__side {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-```
-
-Parent must have a `relative` position so
-
-```scss
-.card {
-  position: relative;
-}
-```
-
-now they try to take all the pace next to eachother so we give them a `width`
-
-And we use a property to hide the back side
-
-```scss
-&__side {
-  width: 100%;
-  backface-visibility: hidden;
-}
-```
-
-To fix the collapse from the `absolute` positioning we give the parent the same `height`
-
-```scss
-.card {
-  height: 50rem;
 }
 ```
