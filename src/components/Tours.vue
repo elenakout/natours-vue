@@ -109,8 +109,8 @@
         </div>
       </div>
 
-      <div class="u-center-text u-margin-bottom-big">
-        <a href="" class="btn">Discover all tours</a>
+      <div class="u-center-text u-margin-top-huge">
+        <a href="" class="btn btn--green">Discover all tours</a>
       </div>
     </section>
   </div>
