@@ -1,5 +1,7 @@
 [Gradient Text Effect](##gradienttexteffect)
 
+[Skew a sectiont](##skewAsection)
+
 ## Gradient Text Effect
 
 Set a `backgrount-image` to the `<h#>` with a `linear-gradient`
@@ -112,5 +114,127 @@ To `unskew` the content of the section we use `direct-child` selector (`>`)
 ```scss
 & > * {
   transform: skewY(7deg);
+}
+```
+
+---
+
+## Implement a full rotate on a card element
+
+```scss
+.card {
+  background-color: orangered;
+  height: 50rem;
+  transition: all 0.5sec ease;
+}
+```
+
+When we `hover` we rotate `180deg` across the `Y` axis
+
+```scss
+&:hover {
+  transform: rotateY(180deg);
+}
+```
+
+To make it to pop out we use `prespective`.
+
+We define `prespective` to the parent element and then we use the `direct-child` selector
+
+For `firefox` we use `-moz-perspective`
+
+```scss
+perspective: 150rem;
+-moz-perspective: 150rem;
+```
+
+We make a `div` for the card side
+
+> `<div class="card__side"></div>`
+
+```scss
+&__side {
+  background-color: orangered;
+  height: 50rem;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.5sec;
+}
+```
+
+```scss
+&:hover &__side {
+  transform: rotateY(180deg);
+}
+```
+
+We use a `modifier class` for each side
+
+```html
+<div class="card__side--front">
+  Front Side
+</div>
+
+<div class="card__side--back">
+  Back Side
+</div>
+```
+
+```scss
+&--frond {
+  background-color: orangered;
+}
+
+&--back {
+  background-color: green;
+  transform: rotateY(180deg);
+}
+```
+
+And the `scss`
+
+```scss
+&:hover &__side--front {
+  transform: rotateY(180deg);
+}
+&:hover &__side--back {
+  transform: rotateY(0);
+}
+```
+
+To have the divs on top of eachother we use the `absolute` position on the `card__side` class
+
+```scss
+&__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+```
+
+Parent must have a `relative` position so
+
+```scss
+.card {
+  position: relative;
+}
+```
+
+now they try to take all the pace next to eachother so we give them a `width`
+
+And we use a property to hide the back side
+
+```scss
+&__side {
+  width: 100%;
+  backface-visibility: hidden;
+}
+```
+
+To fix the collapse from the `absolute` positioning we give the parent the same `height`
+
+```scss
+.card {
+  height: 50rem;
 }
 ```

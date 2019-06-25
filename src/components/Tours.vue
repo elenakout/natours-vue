@@ -9,7 +9,10 @@
 
       <div class="row">
         <div class="col-1-of-3">
-          Col 1 of 3
+          <div class="card">
+            <div class="card__side card__side--front">FRONT</div>
+            <div class="card__side card__side--back">BACK</div>
+          </div>
         </div>
         <div class="col-1-of-3">
           Col 1 of 3
