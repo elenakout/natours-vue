@@ -174,3 +174,29 @@ Rotate the sides
   transform: rotateY(0);
 }
 ```
+
+---
+
+## Background Blend Property
+
+The `background-blend` property describes how the elements background images should blend
+
+If we have muliple backgrounds and we wnat them to blend.
+
+### Blend a background img with linear gradient
+
+> One background then a comma then another
+
+```scss
+background-image: linear-gradient(
+    to right bottom,
+    $color-secondary-light,
+    $color-secondary-dark
+  ), url(https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Natours/starter/img/nat-5.jpg);
+```
+
+The property `background-blend-mode` takes values like photoshop
+
+```css
+background-blend-mode: screen;
+```
