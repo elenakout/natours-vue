@@ -200,3 +200,25 @@ The property `background-blend-mode` takes values like photoshop
 ```css
 background-blend-mode: screen;
 ```
+
+---
+
+## Make Text go round
+
+We use the `shape-outside` property
+
+We define a shape like in `clip-path`
+
+```scss
+&__shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+
+  transform: translateX(-3rem);
+}
+```

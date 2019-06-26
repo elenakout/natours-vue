@@ -1,5 +1,39 @@
 <template>
-  <div class="stories"></div>
+  <div class="stories">
+    <section class="section-stories">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          We make people geuinely happy
+        </h2>
+      </div>
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img
+              src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Natours/starter/img/nat-8.jpg"
+              alt="backimage"
+              class="story__image"
+            />
+            <figcaption class="story__caption">
+              Mary Smith
+            </figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I Had the best week with my family
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas at
+              ab voluptatem architecto asperiores, sint nostrum adipisci natus
+              cum ut ullam repellat beatae nobis impedit vero! Quo qui molestias
+              culpa? nobis impedit vero! Quo qui molestias culpa? architecto
+              asperiores, sint nostrum adipisci natus cum ut ullam
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

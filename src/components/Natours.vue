@@ -6,6 +6,7 @@
       <About />
       <Features />
       <tours />
+      <stories />
     </main>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Header from "@/components/Header.vue";
 import About from "@/components/About.vue";
 import Features from "@/components/Features.vue";
 import Tours from "@/components/Tours.vue";
+import Stories from "@/components/Stories.vue";
 
 export default {
   name: "natours",
@@ -24,7 +26,8 @@ export default {
     // GridTest,
     Features,
     About,
-    Tours
+    Tours,
+    Stories
   }
 };
 </script>
