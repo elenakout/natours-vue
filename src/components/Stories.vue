@@ -6,6 +6,8 @@
           We make people geuinely happy
         </h2>
       </div>
+
+      <!-- STORY 1 -->
       <div class="row">
         <div class="story">
           <figure class="story__shape">
@@ -31,6 +33,38 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="story">
+          <figure class="story__shape">
+            <img
+              src="https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Natours/starter/img/nat-9.jpg"
+              alt="backimage"
+              class="story__image"
+            />
+            <figcaption class="story__caption">
+              Jack Wilson
+            </figcaption>
+          </figure>
+          <div class="story__text">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Wow my life is complete diffrent now
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas at
+              ab voluptatem architecto asperiores, sint nostrum adipisci natus
+              cum ut ullam repellat beatae nobis impedit vero! Quo qui molestias
+              culpa? nobis impedit vero! Quo qui molestias culpa? architecto
+              asperiores, sint nostrum adipisci natus cum ut ullam
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-center-text u-margin-top-huge">
+        <a href="#" class="btn-text"
+          >Read all stories <i class="fas fa-chevron-right"></i
+        ></a>
       </div>
     </section>
   </div>
