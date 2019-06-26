@@ -9,6 +9,7 @@
       <stories />
       <booking />
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Features from "@/components/Features.vue";
 import Tours from "@/components/Tours.vue";
 import Stories from "@/components/Stories.vue";
 import Booking from "@/components/Booking.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "natours",
@@ -30,7 +32,8 @@ export default {
     About,
     Tours,
     Stories,
-    Booking
+    Booking,
+    Footer
   }
 };
 </script>
