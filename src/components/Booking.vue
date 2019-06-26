@@ -30,6 +30,32 @@
                 />
                 <label for="email" class="form__label">Email address</label>
               </div>
+              <div class="form__group">
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    name="size"
+                    id="small"
+                    class="form__radio-input"
+                  />
+                  <label for="small" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Small tour group
+                  </label>
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    name="size"
+                    id="large"
+                    class="form__radio-input"
+                  />
+                  <label for="large" class="form__radio-label">
+                    <span class="form__radio-button"></span>
+                    Large tour group</label
+                  >
+                </div>
+              </div>
             </form>
           </div>
         </div>
