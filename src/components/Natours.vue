@@ -1,5 +1,6 @@
 <template>
   <div class="natours">
+    <navigation />
     <Header />
     <!-- <grid-test /> -->
     <main>
@@ -10,6 +11,7 @@
       <booking />
     </main>
     <Footer />
+    <popup />
   </div>
 </template>
 
@@ -22,6 +24,8 @@ import Tours from "@/components/Tours.vue";
 import Stories from "@/components/Stories.vue";
 import Booking from "@/components/Booking.vue";
 import Footer from "@/components/Footer.vue";
+import Navigation from "@/components/Navigation.vue";
+import Popup from "@/components/Popup.vue";
 
 export default {
   name: "natours",
@@ -33,7 +37,9 @@ export default {
     Tours,
     Stories,
     Booking,
-    Footer
+    Footer,
+    Navigation,
+    Popup
   }
 };
 </script>
