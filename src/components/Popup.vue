@@ -1,7 +1,7 @@
 <template>
   <div class="modal">
     <div class="popup">
-      <div class="popup_content">
+      <div class="popup__content">
         POPUP
       </div>
     </div>
