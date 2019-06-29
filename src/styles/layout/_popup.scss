@@ -11,9 +11,10 @@
     @include absCenter;
 
     width: 75%;
-    background-color: $color-gray-light-2;
+    background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
-    height: 70%;
-    opacity: 1;
+    height: 50rem;
+
+    border-radius: 3px;
   }
 }
