@@ -1,6 +1,6 @@
 <template>
   <div class="modal">
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
           <img
@@ -15,6 +15,7 @@
           />
         </div>
         <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
           <h2 class="heading-secondary u-margin-bottom-small">
             Start Booking now
           </h2>
