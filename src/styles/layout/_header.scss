@@ -2,19 +2,27 @@
   height: 95vh;
 
   /* Gradient Background  */
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-primary-light, 0.8),
+  //     rgba($color-primary-dark, 0.8)
+  //   ),
+  //   url('https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Natours/starter/img/hero.jpg');
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
+      rgba($color-primary-light, 0.3),
+      rgba($color-primary-dark, 0.3)
     ),
-    url('https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Natours/starter/img/hero.jpg');
+    url('https://q-cf.bstatic.com/images/hotel/max1280x900/199/199719932.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: relative;
 
   /*  CLIP - PATH  */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 82vh, 0 100%);
 
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -33,9 +41,14 @@
 
   &__text-box {
     position: absolute;
-    top: 40vh;
+    top: 75vh;
+
     left: 50vw;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @include respond(phone) {
+      top: 30vh;
+    }
   }
 }

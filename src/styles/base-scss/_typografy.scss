@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine:400,700&display=swap');
+
 body {
   font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: $default-font-size;
   color: $color-gray-dark;
 
-  line-height: 1.7;
+  line-height: 1.2;
 }
 
 .heading-primary {
@@ -15,16 +17,18 @@ body {
   backface-visibility: hidden;
 
   &--main {
+    font-family: 'Tangerine', cursive;
+
+    text-transform: none;
     display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
+    font-size: 7rem;
+    font-weight: 700;
 
     animation: moveInLeft 1s ease-out;
 
     @include respond(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
+      font-size: 3rem;
     }
 
     /*   animation-name: moveInLeft;
