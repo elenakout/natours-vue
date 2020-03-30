@@ -19,7 +19,7 @@ body {
   &--main {
     font-family: 'Tangerine', cursive;
 
-    text-transform: none;
+    text-transform: uppercase;
     display: block;
     font-size: 7rem;
     font-weight: 700;
@@ -64,6 +64,7 @@ body {
   );
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2sec;
